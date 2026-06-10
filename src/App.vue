@@ -133,6 +133,7 @@ onMounted(async () => {
               <tr>
                 <th scope="col">Naam</th>
                 <th scope="col">Categorie</th>
+                <th scope="col">Aantal</th>
               </tr>
             </thead>
             <tbody>
@@ -144,6 +145,7 @@ onMounted(async () => {
                   </span>
                 </td>
                 <td data-label="Categorie">{{ item.category }}</td>
+                <td data-label="Aantal">{{ item.amount > 1 ? item.amount : '' }}</td>
               </tr>
             </tbody>
           </table>
