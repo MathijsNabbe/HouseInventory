@@ -1,18 +1,18 @@
 # Spullekes & Meubels
 
-Een eenvoudige, lichte one-page website om spullen en meubels in huis bij te houden. Gebouwd met Vue 3 en Vite.
+A simple, lightweight one-page website for tracking household items and furniture. Built with Vue 3 and Vite.
 
-## Functies
+## Features
 
-- Tabel met spullen en meubels, geladen uit `public/items.json`
-- Zoeken op naam (hoofdletterongevoelig, fuzzy)
-- Filteren op categorie
-- **NEW**-badge voor items van de afgelopen maand
-- Responsive layout voor desktop en mobiel
+- Table of items and furniture, loaded from `public/items.json`
+- Search by name (case-insensitive, fuzzy)
+- Filter by category
+- **NEW** badge for items from the past month
+- Responsive layout for desktop and mobile
 
-## Items beheren
+## Managing items
 
-Bewerk alleen `public/items.json` om items toe te voegen, te wijzigen of te verwijderen:
+Edit only `public/items.json` to add, change, or remove items:
 
 ```json
 [
@@ -24,20 +24,20 @@ Bewerk alleen `public/items.json` om items toe te voegen, te wijzigen of te verw
 ]
 ```
 
-- **name**: naam van het item
-- **category**: categorie (bijv. Woonkamer, Eetkamer)
-- **date**: datum in `DD-MM-YYYY`-formaat (wordt niet getoond in de tabel, maar bepaalt sortering en NEW-badge)
+- **name**: name of the item
+- **category**: category (e.g. Woonkamer, Eetkamer)
+- **date**: date in `DD-MM-YYYY` format (not shown in the table, but determines sorting and the NEW badge)
 
-Items worden gesorteerd van nieuw naar oud; bij dezelfde datum alfabetisch op naam.
+Items are sorted from newest to oldest; when dates match, alphabetically by name.
 
-## Lokaal ontwikkelen
+## Local development
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in je browser.
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## Build
 
@@ -45,51 +45,51 @@ Open [http://localhost:5173](http://localhost:5173) in je browser.
 npm run build
 ```
 
-De productie-build staat in `dist/`.
+The production build is in `dist/`.
 
-Lokaal previewen:
+Preview locally:
 
 ```bash
 npm run preview
 ```
 
-## Deployen naar GitHub Pages
+## Deploying to GitHub Pages
 
-### Automatisch (aanbevolen)
+### Automatic (recommended)
 
-1. Push de code naar de `main`-branch op GitHub.
-2. Ga in de repository naar **Settings → Pages**.
-3. Onder **Build and deployment**, kies **GitHub Actions** als source.
-4. Bij elke push naar `main` bouwt en deployt de workflow in `.github/workflows/deploy.yml` automatisch.
+1. Push the code to the `main` branch on GitHub.
+2. In the repository, go to **Settings → Pages**.
+3. Under **Build and deployment**, choose **GitHub Actions** as the source.
+4. On every push to `main`, the workflow in `.github/workflows/deploy.yml` builds and deploys automatically.
 
-De site is bereikbaar op:
+The site is available at:
 
 `https://huisje.mathijsnabbe.nl/`
 
 ### Base path
 
-De build gebruikt `VITE_BASE_PATH=/` omdat een custom domain de site vanaf de root serveert. Asset-paden zoals `/HouseInventory/assets/...` geven op een custom domain 404 (HTML), wat leidt tot MIME-type fouten en een lege pagina.
+The build uses `VITE_BASE_PATH=/` because a custom domain serves the site from the root. Asset paths like `/HouseInventory/assets/...` return 404 (HTML) on a custom domain, which causes MIME-type errors and a blank page.
 
-Gebruik je **geen** custom domain maar wel `username.github.io/HouseInventory/`, zet dan in `.github/workflows/deploy.yml`:
+If you are **not** using a custom domain but are using `username.github.io/HouseInventory/`, set this in `.github/workflows/deploy.yml`:
 
 ```yaml
 VITE_BASE_PATH: /HouseInventory/
 ```
 
-### Handmatig
+### Manual
 
 ```bash
 VITE_BASE_PATH=/ npm run build
 ```
 
-## Projectstructuur
+## Project structure
 
 ```
 ├── public/
-│   ├── items.json          # Itemdata (hier bewerken)
-│   └── CNAME               # Custom domain voor GitHub Pages
+│   ├── items.json          # Item data (edit here)
+│   └── CNAME               # Custom domain for GitHub Pages
 ├── src/
-│   ├── App.vue             # Hoofdcomponent
+│   ├── App.vue             # Main component
 │   ├── main.js
 │   └── style.css
 ├── .github/workflows/
@@ -103,4 +103,4 @@ VITE_BASE_PATH=/ npm run build
 
 - [Vue 3](https://vuejs.org/)
 - [Vite](https://vitejs.dev/)
-- Geen router, minimale dependencies
+- No router, minimal dependencies
