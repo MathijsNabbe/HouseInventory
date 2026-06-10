@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Bank",
+    "category": "Woonkamer",
+    "date": "10-06-2026"
+  },
+  {
+    "name": "Eettafel",
+    "category": "Eetkamer",
+    "date": "01-06-2026"
+  },
+  {
+    "name": "Salontafel",
+    "category": "Woonkamer",
+    "date": "15-05-2026"
+  },
+  {
+    "name": "Stoelen (set van 4)",
+    "category": "Eetkamer",
+    "date": "01-06-2026"
+  },
+  {
+    "name": "Boekenkast",
+    "category": "Werkkamer",
+    "date": "20-04-2026"
+  },
+  {
+    "name": "Bed",
+    "category": "Slaapkamer",
+    "date": "12-03-2026"
+  },
+  {
+    "name": "Nachtkastje",
+    "category": "Slaapkamer",
+    "date": "12-03-2026"
+  },
+  {
+    "name": "Wasmachine",
+    "category": "Wasruimte",
+    "date": "05-02-2026"
+  }
+]
