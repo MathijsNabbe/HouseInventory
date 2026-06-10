@@ -64,23 +64,30 @@ npm run preview
 
 De site is bereikbaar op:
 
-`https://<jouw-github-gebruikersnaam>.github.io/HouseInventory/`
+`https://huisje.mathijsnabbe.nl/`
+
+### Base path
+
+De build gebruikt `VITE_BASE_PATH=/` omdat een custom domain de site vanaf de root serveert. Asset-paden zoals `/HouseInventory/assets/...` geven op een custom domain 404 (HTML), wat leidt tot MIME-type fouten en een lege pagina.
+
+Gebruik je **geen** custom domain maar wel `username.github.io/HouseInventory/`, zet dan in `.github/workflows/deploy.yml`:
+
+```yaml
+VITE_BASE_PATH: /HouseInventory/
+```
 
 ### Handmatig
 
 ```bash
-GITHUB_ACTIONS=true npm run build
+VITE_BASE_PATH=/ npm run build
 ```
-
-Upload de inhoud van `dist/` naar GitHub Pages, of gebruik een tool zoals `gh-pages`.
-
-> **Let op:** De Vite `base`-path is ingesteld op `/HouseInventory/` tijdens CI-builds (`GITHUB_ACTIONS=true`). Als je repository een andere naam heeft, pas dan `base` aan in `vite.config.js` en update de URL in deze README.
 
 ## Projectstructuur
 
 ```
 ├── public/
-│   └── items.json          # Itemdata (hier bewerken)
+│   ├── items.json          # Itemdata (hier bewerken)
+│   └── CNAME               # Custom domain voor GitHub Pages
 ├── src/
 │   ├── App.vue             # Hoofdcomponent
 │   ├── main.js
