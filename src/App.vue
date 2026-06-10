@@ -132,7 +132,6 @@ onMounted(async () => {
             <thead>
               <tr>
                 <th scope="col">Naam</th>
-                <th scope="col">Categorie</th>
                 <th scope="col">Aantal</th>
               </tr>
             </thead>
@@ -144,7 +143,6 @@ onMounted(async () => {
                     <span v-if="isNew(item.date)" class="new-badge" aria-label="Nieuw item">NEW</span>
                   </span>
                 </td>
-                <td data-label="Categorie">{{ item.category }}</td>
                 <td data-label="Aantal">{{ item.amount > 1 ? item.amount : '' }}</td>
               </tr>
             </tbody>

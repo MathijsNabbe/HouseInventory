@@ -212,7 +212,4 @@ body {
     padding-bottom: 0.5rem;
   }
 
-  .items-table td[data-label='Categorie'] {
-    padding-bottom: 0;
-  }
 }
