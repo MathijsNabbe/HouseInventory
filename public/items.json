@@ -2,41 +2,49 @@
   {
     "name": "Bank",
     "category": "Woonkamer",
-    "date": "10-06-2026"
+    "date": "10-06-2026",
+    "amount": 1
   },
   {
     "name": "Eettafel",
     "category": "Eetkamer",
-    "date": "01-06-2026"
+    "date": "01-06-2026",
+    "amount": 1
   },
   {
     "name": "Salontafel",
     "category": "Woonkamer",
-    "date": "15-05-2026"
+    "date": "15-05-2026",
+    "amount": 1
   },
   {
     "name": "Stoelen (set van 4)",
     "category": "Eetkamer",
-    "date": "01-06-2026"
+    "date": "01-06-2026",
+    "amount": 4
   },
   {
     "name": "Boekenkast",
     "category": "Werkkamer",
-    "date": "20-04-2026"
+    "date": "20-04-2026",
+    "amount": 1
   },
   {
     "name": "Bed",
     "category": "Slaapkamer",
-    "date": "12-03-2026"
+    "date": "12-03-2026",
+    "amount": 1
   },
   {
     "name": "Nachtkastje",
     "category": "Slaapkamer",
-    "date": "12-03-2026"
+    "date": "12-03-2026",
+    "amount": 2
   },
   {
     "name": "Wasmachine",
     "category": "Wasruimte",
-    "date": "05-02-2026"
+    "date": "05-02-2026",
+    "amount": 1
   }
 ]
