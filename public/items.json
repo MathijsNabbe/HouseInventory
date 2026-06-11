@@ -119,4 +119,40 @@
     "date": "01-01-2026",
     "amount": 2
   },
+  {
+    "name": "Wijnglas Wit",
+    "category": "Glaswerk",
+    "date": "01-01-2026",
+    "amount": 4
+  },
+  {
+    "name": "Wijnglas Rood",
+    "category": "Glaswerk",
+    "date": "01-01-2026",
+    "amount": 4
+  },
+  {
+    "name": "Theeglas",
+    "category": "Glaswerk",
+    "date": "01-01-2026",
+    "amount": 6
+  },
+  {
+    "name": "Laag drinkglas",
+    "category": "Glaswerk",
+    "date": "01-01-2026",
+    "amount": 9
+  },
+  {
+    "name": "Hoog drinkglas",
+    "category": "Glaswerk",
+    "date": "01-01-2026",
+    "amount": 9
+  },
+  {
+    "name": "Glazen kruidenpotjes",
+    "category": "Glaswerk",
+    "date": "01-01-2026",
+    "amount": 36
+  }
 ]
