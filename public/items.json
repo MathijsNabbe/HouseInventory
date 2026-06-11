@@ -89,4 +89,34 @@
     "date": "01-01-2026",
     "amount": 2
   },
+  {
+    "name": "Klein Bord Zwart",
+    "category": "Servies",
+    "date": "01-01-2026",
+    "amount": 6
+  },
+  {
+    "name": "Kleine Schaal Zwart",
+    "category": "Servies",
+    "date": "01-01-2026",
+    "amount": 3
+  },
+  {
+    "name": "Diep Middel Bord Zwart",
+    "category": "Servies",
+    "date": "01-01-2026",
+    "amount": 4
+  },
+  {
+    "name": "Groot Bord Zwart",
+    "category": "Servies",
+    "date": "01-01-2026",
+    "amount": 6
+  },
+  {
+    "name": "Bestekset Zwart (6 personen)",
+    "category": "Servies",
+    "date": "01-01-2026",
+    "amount": 2
+  },
 ]
