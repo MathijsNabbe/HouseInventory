@@ -40,5 +40,53 @@
     "category": "Servies",
     "date": "01-01-2026",
     "amount": 9
-  }
+  },
+  {
+    "name": "Schaaltje Groen",
+    "category": "Servies",
+    "date": "01-01-2026",
+    "amount": 5
+  },
+  {
+    "name": "Klein Bord Groen",
+    "category": "Servies",
+    "date": "01-01-2026",
+    "amount": 6
+  },
+  {
+    "name": "Groot Bord Groen",
+    "category": "Servies",
+    "date": "01-01-2026",
+    "amount": 5
+  },
+  {
+    "name": "Vork Zilver",
+    "category": "Servies",
+    "date": "01-01-2026",
+    "amount": 6
+  },
+  {
+    "name": "Eetlepel Zilver",
+    "category": "Servies",
+    "date": "01-01-2026",
+    "amount": 9
+  },
+  {
+    "name": "Smeermes Zilver",
+    "category": "Servies",
+    "date": "01-01-2026",
+    "amount": 7
+  },
+  {
+    "name": "Theelepel Zilver",
+    "category": "Servies",
+    "date": "01-01-2026",
+    "amount": 4
+  },
+  {
+    "name": "Dessertlepel Zilver",
+    "category": "Servies",
+    "date": "01-01-2026",
+    "amount": 2
+  },
 ]
